@@ -23,4 +23,10 @@ route.post('/signup',(req,res)=>{
     })    
 })
 
+route.get('/logout', function(req, res){
+    req.logout();
+    res.redirect('/login');
+  });
+
+
 exports=module.exports=route
